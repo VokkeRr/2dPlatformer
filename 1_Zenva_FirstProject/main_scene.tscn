@@ -130,6 +130,9 @@ moveDistanse = 144
 position = Vector2(576, 328)
 script = ExtResource("5_as7u6")
 
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="Camera2D"]
+script = ExtResource("7_q4184")
+
 [node name="Coin2" parent="." instance=ExtResource("6_0p37s")]
 position = Vector2(384, 208)
 
@@ -142,10 +145,24 @@ position = Vector2(640, 424)
 [node name="Coin5" parent="." instance=ExtResource("6_0p37s")]
 position = Vector2(1112, 320)
 
+[node name="Coin6" parent="." instance=ExtResource("6_0p37s")]
+position = Vector2(1568, 528)
+
+[node name="Coin7" parent="." instance=ExtResource("6_0p37s")]
+position = Vector2(1888, 400)
+
+[node name="Coin8" parent="." instance=ExtResource("6_0p37s")]
+position = Vector2(1424, 128)
+
+[node name="Coin9" parent="." instance=ExtResource("6_0p37s")]
+position = Vector2(1424, 160)
+
+[node name="Coin10" parent="." instance=ExtResource("6_0p37s")]
+position = Vector2(1456, 160)
+
+[node name="Coin11" parent="." instance=ExtResource("6_0p37s")]
+position = Vector2(1456, 128)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("6_tkle1")]
-
-[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(-11.4, 0)
-script = ExtResource("7_q4184")

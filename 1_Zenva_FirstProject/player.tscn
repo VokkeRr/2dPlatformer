@@ -15,7 +15,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("1_5ouxt")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle",
 "speed": 5.0
 }, {
@@ -23,7 +23,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_y7m1c")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
 "speed": 5.0
 }, {
@@ -48,6 +48,5 @@ shape = SubResource("RectangleShape2D_v6pa2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_osd5r")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.835838

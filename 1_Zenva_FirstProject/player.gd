@@ -7,7 +7,8 @@ var jumpForse :int = 600
 var gravity : int = 1200
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var ui = $"../CanvasLayer/UI"
-@onready var audio_player = $"../AudioPlayer"
+@onready var audio_player = $"../Camera2D/AudioPlayer"
+
 
 
 
@@ -28,8 +29,9 @@ func _physics_process(delta):
 	if velocity.x != 0: 
 		animated_sprite_2d.flip_h = velocity.x < 0 
 		if is_on_floor():
-			animated_sprite_2d.animation = "walk"
-	else: animated_sprite_2d.animation = "idle"
+			animated_sprite_2d.play("walk")
+	elif velocity.x == 0 and is_on_floor():
+		animated_sprite_2d.animation = "idle"
 	if velocity.y != 0 and !is_on_floor():
 		animated_sprite_2d.animation = "jump"
 		
